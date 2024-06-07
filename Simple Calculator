@@ -1,0 +1,51 @@
+#include<iostream>
+using namespace std;
+
+int addition(int x, int y){
+    int sum = x+y;
+    return sum;
+}
+
+int subtraction(int x, int y){
+    int subtract = x-y;
+    return subtract;
+}
+
+int multiplication(int x, int y){
+    int product = x*y;
+    return product;
+}
+
+int division(int x, int y){
+    int divide = x-y;
+    return divide;
+}
+
+int main(){
+    int choice;
+    cout<<"Enter the operation you want to perform (1 for addition, 2 for subtraction, 3 multiplication, 4 subtraction)";
+    cin>>choice;
+
+
+    int num1;
+    int num2;
+    cout<<"Enter First Number"<<endl;
+    cin>>num1;
+    cout<<"Enter Second Number"<<endl;
+    cin>>num2;
+     if (choice == 1){
+        cout<<"Sum of "<<num1<<" and " <<num2 <<" = "<<addition(num1,num2);
+    }
+    else if(choice==2){
+        cout<<"Subtraction of "<<num1<<" and " <<num2 << " = "<<subtraction(num1,num2);
+        
+    } 
+    else if(choice==3){
+        cout<<"Multiplication of "<<num1<<" and " <<num2 << " = "<<multiplication(num1,num2);
+    }
+    else if(choice== 3){
+          cout<<"division of "<<num1<<" and " <<num2 << " = "<<division(num1,num2);
+    }
+    return 0;
+
+}
